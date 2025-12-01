@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Документация, руководство по установке и FAQ для мода ProtocolDLC">
+  <title>Документация - ProtocolDLC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">ProtocolDLC</a>
+        <button class="mobile-menu-toggle">☰</button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="features.html">Возможности</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="documentation.html">Документация</a></li>
+            <li><a href="community.html">Сообщество</a></li>
+            <li><a href="download.html">Скачать</a></li>
+            <li><a href="account.html">Аккаунт</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 4rem 0;">
+      <div class="container">
+        <h1>Документация</h1>
+        <p>Полное руководство по установке, настройке и использованию ProtocolDLC</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="tab-installation">Установка</button>
+          <button class="tab-btn" data-tab="tab-requirements">Системные требования</button>
+          <button class="tab-btn" data-tab="tab-configuration">Настройка</button>
+          <button class="tab-btn" data-tab="tab-faq">FAQ</button>
+          <button class="tab-btn" data-tab="tab-troubleshooting">Решение проблем</button>
+        </div>
+
+        <div id="tab-installation" class="tab-content active">
+          <div class="card">
+            <h2>Руководство по установке</h2>
+            <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">
+              Следуйте этим шагам для правильной установки мода ProtocolDLC
+            </p>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Шаг 1: Скачайте мод</h3>
+            <p>Перейдите на <a href="download.html" style="color: var(--color-cyan);">страницу загрузки</a> и выберите версию, совместимую с вашим загрузчиком модов.</p>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Шаг 2: Установите загрузчик модов</h3>
+            <p>Если у вас еще не установлен загрузчик модов, выберите один из следующих:</p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li><strong>Forge</strong> - Самый популярный загрузчик с широкой поддержкой</li>
+              <li><strong>Fabric</strong> - Легковесный и быстрый загрузчик</li>
+              <li><strong>NeoForge</strong> - Современная альтернатива Forge</li>
+              <li><strong>Quilt</strong> - Форк Fabric с дополнительными возможностями</li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Шаг 3: Разместите файл мода</h3>
+            <p>Скопируйте скачанный файл <code style="background: var(--color-bg-tertiary); padding: 0.25rem 0.5rem; border-radius: 4px;">ProtocolDLC-x.x.x.jar</code> в папку <code style="background: var(--color-bg-tertiary); padding: 0.25rem 0.5rem; border-radius: 4px;">mods</code> вашей игры:</p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li><strong>Windows:</strong> <code>%appdata%/.minecraft/mods</code></li>
+              <li><strong>macOS:</strong> <code>~/Library/Application Support/minecraft/mods</code></li>
+              <li><strong>Linux:</strong> <code>~/.minecraft/mods</code></li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Шаг 4: Запустите игру</h3>
+            <p>Запустите игру через профиль с установленным загрузчиком модов. ProtocolDLC должен автоматически загрузиться.</p>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Шаг 5: Проверка установки</h3>
+            <p>В главном меню игры вы должны увидеть:</p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Неоновый интерфейс с фиолетово-голубыми акцентами</li>
+              <li>Новую кнопку настроек ProtocolDLC</li>
+              <li>Запись в списке модов (кнопка "Mods")</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tab-requirements" class="tab-content">
+          <div class="card">
+            <h2>Системные требования</h2>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Минимальные требования</h3>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li><strong>ОС:</strong> Windows 7/8/10/11, macOS 10.14+, Linux (любой современный дистрибутив)</li>
+              <li><strong>Процессор:</strong> Intel Core i3 / AMD Ryzen 3 или эквивалент</li>
+              <li><strong>ОЗУ:</strong> 4 GB (рекомендуется выделить 2 GB для игры)</li>
+              <li><strong>Видеокарта:</strong> Intel HD Graphics 4000 / NVIDIA GeForce 400 Series / AMD Radeon HD 7000</li>
+              <li><strong>DirectX:</strong> Version 11</li>
+              <li><strong>Свободное место:</strong> 200 MB</li>
+              <li><strong>Java:</strong> Java 17 или выше</li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Рекомендуемые требования</h3>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li><strong>ОС:</strong> Windows 10/11, macOS 12+, Linux</li>
+              <li><strong>Процессор:</strong> Intel Core i5 / AMD Ryzen 5 или выше</li>
+              <li><strong>ОЗУ:</strong> 8 GB (рекомендуется выделить 4-6 GB для игры)</li>
+              <li><strong>Видеокарта:</strong> NVIDIA GeForce GTX 1060 / AMD Radeon RX 580 или выше</li>
+              <li><strong>DirectX:</strong> Version 12</li>
+              <li><strong>Свободное место:</strong> 500 MB</li>
+              <li><strong>Java:</strong> Java 21 (LTS)</li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Совместимость</h3>
+            <p><strong>Загрузчики модов:</strong></p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Forge 1.20.1+</li>
+              <li>Fabric 0.14.0+</li>
+              <li>NeoForge 1.20.2+</li>
+              <li>Quilt 0.19.0+</li>
+            </ul>
+
+            <p style="margin-top: 1.5rem;"><strong>Версии игры:</strong></p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Minecraft 1.20.1</li>
+              <li>Minecraft 1.20.2</li>
+              <li>Minecraft 1.20.4</li>
+              <li>Minecraft 1.21 (в разработке)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tab-configuration" class="tab-content">
+          <div class="card">
+            <h2>Настройка мода</h2>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Файлы конфигурации</h3>
+            <p>Конфигурационные файлы находятся в папке <code style="background: var(--color-bg-tertiary); padding: 0.25rem 0.5rem; border-radius: 4px;">config/protocoldlc/</code></p>
+
+            <h4 style="margin-top: 1.5rem; color: var(--color-cyan);">config.toml</h4>
+            <p>Основной файл настроек:</p>
+            <pre style="background: var(--color-bg-tertiary); padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0;">
+[general]
+enabled = true
+debug_mode = false
+
+[performance]
+max_threads = 4
+optimize_memory = true
+lazy_loading = true
+
+[visuals]
+neon_effects = true
+animations = true
+particle_quality = "high"
+
+[gameplay]
+enable_new_mechanics = true
+difficulty_modifier = 1.0
+custom_crafting = true</pre>
+
+            <h4 style="margin-top: 1.5rem; color: var(--color-cyan);">Внутриигровые настройки</h4>
+            <p>Большинство параметров можно изменить через меню Options → ProtocolDLC Settings:</p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li><strong>Визуальные эффекты</strong> - включение/отключение неоновых эффектов</li>
+              <li><strong>Производительность</strong> - настройки оптимизации</li>
+              <li><strong>Геймплей</strong> - изменение игровых механик</li>
+              <li><strong>Интерфейс</strong> - кастомизация UI элементов</li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Горячие клавиши</h3>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li><strong>P</strong> - открыть меню ProtocolDLC</li>
+              <li><strong>Ctrl+P</strong> - быстрые настройки</li>
+              <li><strong>Shift+P</strong> - переключение режима отладки</li>
+              <li><strong>Alt+P</strong> - сброс настроек по умолчанию</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="tab-faq" class="tab-content">
+          <h2 style="margin-bottom: 2rem;">Часто задаваемые вопросы</h2>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Совместим ли ProtocolDLC с другими модами?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Да, ProtocolDLC разработан с учетом совместимости. Он использует стандартные API и не изменяет базовые механики игры агрессивно. Однако могут возникнуть конфликты с модами, которые изменяют те же аспекты игры (например, другие моды на интерфейс).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Можно ли использовать мод на серверах?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Да, ProtocolDLC поддерживает мультиплеер. Мод должен быть установлен как на сервере, так и у клиентов. Для некоторых функций (только визуальные эффекты) можно использовать только клиентскую версию.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Как обновить мод до новой версии?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Удалите старый файл мода из папки mods и поместите туда новую версию. Ваши настройки и данные сохранятся автоматически. Рекомендуется делать резервную копию перед обновлением.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Влияет ли мод на производительность?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>ProtocolDLC оптимизирован для минимального влияния на производительность. На современных системах вы можете даже заметить улучшение FPS благодаря оптимизациям. На слабых системах рекомендуется отключить некоторые визуальные эффекты в настройках.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Где хранятся сохранения и настройки?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Настройки хранятся в папке config/protocoldlc/, а данные игры - в saves/protocoldlc_data/. Эти папки находятся в директории вашей игры.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Мод платный или бесплатный?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>ProtocolDLC полностью бесплатен для скачивания и использования. Мы не берем плату за мод и никогда не будем. Вы можете поддержать разработку через донаты, но это необязательно.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Как сообщить об ошибке?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Вы можете сообщить об ошибке через наш Discord сервер, GitHub Issues или форму обратной связи на странице <a href="community.html" style="color: var(--color-cyan);">Сообщества</a>. Пожалуйста, приложите лог-файл и описание проблемы.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Можно ли создавать контент с этим модом?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Да! Вы можете создавать видео, стримы, обзоры и любой другой контент с использованием ProtocolDLC. Мы будем рады, если вы упомянете мод и оставите ссылку на наш сайт.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-troubleshooting" class="tab-content">
+          <div class="card">
+            <h2>Решение проблем</h2>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Игра не запускается</h3>
+            <p><strong>Возможные причины:</strong></p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Неправильная версия Java</li>
+              <li>Конфликт с другими модами</li>
+              <li>Поврежденный файл мода</li>
+            </ul>
+            <p><strong>Решение:</strong></p>
+            <ol style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Убедитесь, что у вас установлена Java 17 или выше</li>
+              <li>Попробуйте запустить игру только с ProtocolDLC (удалите другие моды временно)</li>
+              <li>Скачайте мод заново с официального сайта</li>
+              <li>Проверьте лог-файл (latest.log) на наличие ошибок</li>
+            </ol>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Низкий FPS</h3>
+            <p><strong>Решение:</strong></p>
+            <ol style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Откройте настройки ProtocolDLC</li>
+              <li>Отключите "Неоновые эффекты" и установите качество частиц на "Низкое"</li>
+              <li>Включите "Оптимизацию памяти" и "Ленивую загрузку"</li>
+              <li>Выделите больше оперативной памяти для игры (в настройках лаунчера)</li>
+            </ol>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Визуальные артефакты</h3>
+            <p><strong>Решение:</strong></p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Обновите драйверы видеокарты</li>
+              <li>Отключите шейдеры, если они установлены</li>
+              <li>Попробуйте изменить настройки качества графики</li>
+              <li>Проверьте совместимость с другими визуальными модами</li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Мод не загружается</h3>
+            <p><strong>Решение:</strong></p>
+            <ol style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Убедитесь, что файл находится в папке mods</li>
+              <li>Проверьте совместимость версии мода с версией игры</li>
+              <li>Проверьте, установлен ли правильный загрузчик модов</li>
+              <li>Установите необходимые библиотеки (если требуются)</li>
+            </ol>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Проблемы в мультиплеере</h3>
+            <p><strong>Решение:</strong></p>
+            <ul style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Убедитесь, что мод установлен на сервере</li>
+              <li>Проверьте, что версии мода совпадают на клиенте и сервере</li>
+              <li>Проверьте конфигурацию сервера (некоторые функции могут быть отключены)</li>
+              <li>Проверьте логи сервера на наличие ошибок</li>
+            </ul>
+
+            <h3 style="color: var(--color-purple-light); margin-top: 2rem;">Получение логов</h3>
+            <p>Для диагностики проблем нужны лог-файлы:</p>
+            <ol style="margin: 1rem 0 1rem 2rem; color: var(--color-text-secondary);">
+              <li>Откройте папку игры</li>
+              <li>Перейдите в папку logs</li>
+              <li>Найдите файл latest.log (самый свежий лог)</li>
+              <li>Отправьте этот файл при сообщении об ошибке</li>
+            </ol>
+
+            <p style="margin-top: 2rem; padding: 1rem; background: rgba(147, 51, 234, 0.1); border-left: 3px solid var(--color-purple); border-radius: 4px;">
+              <strong>💡 Совет:</strong> Если проблема не решена, посетите наш <a href="community.html" style="color: var(--color-cyan);">Discord сервер</a> для получения помощи от сообщества.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ProtocolDLC</h3>
+          <p style="color: var(--color-text-secondary);">
+            Современный мод с расширенными возможностями для улучшения игрового опыта
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="features.html">Возможности</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="documentation.html">Документация</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Сообщество</h3>
+          <ul>
+            <li><a href="community.html">Discord сервер</a></li>
+            <li><a href="community.html">Форум</a></li>
+            <li><a href="community.html">Обратная связь</a></li>
+            <li><a href="account.html">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Ресурсы</h3>
+          <ul>
+            <li><a href="download.html">Скачать</a></li>
+            <li><a href="documentation.html">Установка</a></li>
+            <li><a href="documentation.html">FAQ</a></li>
+            <li><a href="documentation.html">Поддержка</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ProtocolDLC. Все права защищены. Создано с 💜</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
