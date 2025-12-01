@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Личный кабинет ProtocolDLC - вход и регистрация">
+  <title>Аккаунт - ProtocolDLC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">ProtocolDLC</a>
+        <button class="mobile-menu-toggle">☰</button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="features.html">Возможности</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="documentation.html">Документация</a></li>
+            <li><a href="community.html">Сообщество</a></li>
+            <li><a href="download.html">Скачать</a></li>
+            <li><a href="account.html">Аккаунт</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 4rem 0;">
+      <div class="container">
+        <h1>Личный кабинет</h1>
+        <p>Войдите или создайте аккаунт для доступа к дополнительным возможностям</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs" style="justify-content: center;">
+          <button class="tab-btn active" data-tab="tab-login">Вход</button>
+          <button class="tab-btn" data-tab="tab-register">Регистрация</button>
+          <button class="tab-btn" data-tab="tab-profile">Профиль</button>
+        </div>
+
+        <div id="tab-login" class="tab-content active">
+          <div class="auth-container">
+            <div class="auth-form">
+              <h2>Войти в аккаунт</h2>
+              <form id="login-form">
+                <div class="form-group">
+                  <label for="login-email">Email</label>
+                  <input type="email" id="login-email" name="email" required>
+                  <div class="form-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="login-password">Пароль</label>
+                  <input type="password" id="login-password" name="password" required>
+                  <div class="form-error"></div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                  <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                    <input type="checkbox" name="remember" style="width: auto;">
+                    <span>Запомнить меня</span>
+                  </label>
+                  <a href="#" style="color: var(--color-cyan); text-decoration: none;">Забыли пароль?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Войти</button>
+
+                <p style="text-align: center; margin-top: 1.5rem; color: var(--color-text-secondary);">
+                  Нет аккаунта? <a href="#" onclick="document.querySelector('[data-tab=tab-register]').click(); return false;" style="color: var(--color-cyan); text-decoration: none;">Зарегистрируйтесь</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-register" class="tab-content">
+          <div class="auth-container">
+            <div class="auth-form">
+              <h2>Создать аккаунт</h2>
+              <form id="register-form">
+                <div class="form-group">
+                  <label for="register-username">Имя пользователя</label>
+                  <input type="text" id="register-username" name="username" required>
+                  <div class="form-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="register-email">Email</label>
+                  <input type="email" id="register-email" name="email" required>
+                  <div class="form-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="register-password">Пароль</label>
+                  <input type="password" id="register-password" name="password" required>
+                  <div class="form-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="register-password-confirm">Подтвердите пароль</label>
+                  <input type="password" id="register-password-confirm" name="password-confirm" required>
+                  <div class="form-error"></div>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                  <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                    <input type="checkbox" name="terms" required style="width: auto; margin-top: 0.25rem;">
+                    <span>Я принимаю <a href="#" style="color: var(--color-cyan); text-decoration: none;">условия использования</a> и <a href="#" style="color: var(--color-cyan); text-decoration: none;">политику конфиденциальности</a></span>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Зарегистрироваться</button>
+
+                <p style="text-align: center; margin-top: 1.5rem; color: var(--color-text-secondary);">
+                  Уже есть аккаунт? <a href="#" onclick="document.querySelector('[data-tab=tab-login]').click(); return false;" style="color: var(--color-cyan); text-decoration: none;">Войдите</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-profile" class="tab-content">
+          <div style="max-width: 900px; margin: 0 auto;">
+            <div class="profile-section">
+              <div class="profile-header">
+                <div class="profile-avatar">👤</div>
+                <div>
+                  <h2>User_Name</h2>
+                  <p style="color: var(--color-text-secondary);">user@example.com</p>
+                  <p style="color: var(--color-text-secondary); font-size: 0.875rem;">Участник с: Январь 2024</p>
+                </div>
+              </div>
+
+              <div class="grid grid-2">
+                <div class="card">
+                  <h3 style="margin-bottom: 1rem;">📊 Статистика</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div style="display: flex; justify-content: space-between;">
+                      <span style="color: var(--color-text-secondary);">Скачано модов:</span>
+                      <strong>5</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                      <span style="color: var(--color-text-secondary);">Время игры:</span>
+                      <strong>127 часов</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                      <span style="color: var(--color-text-secondary);">Достижений:</span>
+                      <strong>42/100</strong>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                      <span style="color: var(--color-text-secondary);">Репутация:</span>
+                      <strong style="color: var(--color-cyan);">★★★★☆</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <h3 style="margin-bottom: 1rem;">🎮 Последняя активность</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.75rem; color: var(--color-text-secondary);">
+                    <div>
+                      <div>Скачал ProtocolDLC v2.0</div>
+                      <small style="color: var(--color-text-secondary); opacity: 0.7;">2 часа назад</small>
+                    </div>
+                    <div>
+                      <div>Оставил отзыв</div>
+                      <small style="color: var(--color-text-secondary); opacity: 0.7;">1 день назад</small>
+                    </div>
+                    <div>
+                      <div>Присоединился к Discord</div>
+                      <small style="color: var(--color-text-secondary); opacity: 0.7;">3 дня назад</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-section" style="margin-top: 2rem;">
+              <h2 style="margin-bottom: 1.5rem;">Настройки профиля</h2>
+              <form id="profile-form">
+                <div class="form-group">
+                  <label for="profile-username">Имя пользователя</label>
+                  <input type="text" id="profile-username" name="username" value="User_Name">
+                  <div class="form-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="profile-email">Email</label>
+                  <input type="email" id="profile-email" name="email" value="user@example.com">
+                  <div class="form-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="profile-bio">О себе</label>
+                  <textarea id="profile-bio" name="bio" style="min-height: 100px;">Любитель модов и ProtocolDLC!</textarea>
+                </div>
+
+                <h3 style="color: var(--color-purple-light); margin: 2rem 0 1rem;">Изменить пароль</h3>
+
+                <div class="form-group">
+                  <label for="current-password">Текущий пароль</label>
+                  <input type="password" id="current-password" name="current-password">
+                </div>
+
+                <div class="form-group">
+                  <label for="new-password">Новый пароль</label>
+                  <input type="password" id="new-password" name="new-password">
+                </div>
+
+                <div class="form-group">
+                  <label for="new-password-confirm">Подтвердите новый пароль</label>
+                  <input type="password" id="new-password-confirm" name="new-password-confirm">
+                </div>
+
+                <h3 style="color: var(--color-purple-light); margin: 2rem 0 1rem;">Настройки уведомлений</h3>
+
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="notify-updates" checked style="width: auto;">
+                    <span>Получать уведомления об обновлениях</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="notify-news" checked style="width: auto;">
+                    <span>Новости и анонсы</span>
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" name="notify-community" style="width: auto;">
+                    <span>Активность сообщества</span>
+                  </label>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                  <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                  <button type="button" class="btn btn-secondary">Отмена</button>
+                </div>
+              </form>
+
+              <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+                <h3 style="color: #ef4444; margin-bottom: 1rem;">Опасная зона</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+                  Удаление аккаунта необратимо. Все ваши данные будут потеряны.
+                </p>
+                <button class="btn" style="background: #ef4444; color: white;" onclick="return confirm('Вы уверены, что хотите удалить аккаунт?')">
+                  Удалить аккаунт
+                </button>
+              </div>
+            </div>
+
+            <div class="profile-section" style="margin-top: 2rem;">
+              <h2 style="margin-bottom: 1.5rem;">Мои загрузки</h2>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div class="download-item">
+                  <div class="download-info">
+                    <h4>ProtocolDLC v2.0.1</h4>
+                    <p>Скачано: 15 января 2024</p>
+                  </div>
+                  <a href="download.html" class="btn btn-secondary">Обновить</a>
+                </div>
+                <div class="download-item">
+                  <div class="download-info">
+                    <h4>ProtocolDLC v1.9.5</h4>
+                    <p>Скачано: 10 декабря 2023</p>
+                  </div>
+                  <a href="download.html" class="btn btn-secondary">Скачать снова</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ProtocolDLC</h3>
+          <p style="color: var(--color-text-secondary);">
+            Современный мод с расширенными возможностями для улучшения игрового опыта
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="features.html">Возможности</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="documentation.html">Документация</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Сообщество</h3>
+          <ul>
+            <li><a href="community.html">Discord сервер</a></li>
+            <li><a href="community.html">Форум</a></li>
+            <li><a href="community.html">Обратная связь</a></li>
+            <li><a href="account.html">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Ресурсы</h3>
+          <ul>
+            <li><a href="download.html">Скачать</a></li>
+            <li><a href="documentation.html">Установка</a></li>
+            <li><a href="documentation.html">FAQ</a></li>
+            <li><a href="documentation.html">Поддержка</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ProtocolDLC. Все права защищены. Создано с 💜</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
